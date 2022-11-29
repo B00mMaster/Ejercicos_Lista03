@@ -8,40 +8,40 @@ public class Exercise8 : MonoBehaviour
 
     private void Start()
     {
-        LeapYear(year);
+        IsLeapYear(year);
     }
 
 
 
 
-    private int LeapYear(int year)
+    private int IsLeapYear(int theYear)
     {
-        if(0==year%4)
+        if(0==theYear%4)
         {
-            if(0==year%100)
+            if(0==theYear%100)
             {
-                if(0==year%400)
+                if(0==theYear%400)
                 {
-                    Debug.Log($"{year}is a leap year");
+                    Debug.Log($"{theYear}is a leap year");
                 }
                 else
                 {
-                    Debug.Log($"{year}is not a leap year");
+                    Debug.Log($"{theYear}is not a leap year");
                 }
             }
             else
             {
-                Debug.Log($"{year}is not a leap year");
+                Debug.Log($"{theYear}is not a leap year");
             }
         
         
         }
         else
         {
-            Debug.Log($"{year}is not a leap year");
+            Debug.Log($"{theYear}is not a leap year");
         }
 
-        return year;
+        return theYear;
      }
 
 

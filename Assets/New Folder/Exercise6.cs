@@ -12,24 +12,25 @@ public class Exercise6 : MonoBehaviour
         IsGreater(number1, number2);
     }
 
-    private int IsGreater(int num1,int num2)
+    // which of them is greater
+    private int IsGreater(int x,int y)
     {
-        if(num1 == num2)
+        if(x == y)
         { Debug.Log("Bouth numbers are equal");
-                    return num1;
+                    return x;
         }
 
-        else if (num1>num2)
+        else if (x>y)
         {
-            Debug.Log($"{num1} is larger than {num2}");
-                            return num1;
+            Debug.Log($"{x} is greater than {y}");
+                            return x;
 
         }
 
         else
         {
-            Debug.Log($"{num2} is larger than {num1}");
-                          return num1;
+            Debug.Log($"{y} is greater than {x}");
+                          return x;
 
         }
 

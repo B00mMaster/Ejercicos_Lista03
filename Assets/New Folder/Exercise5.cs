@@ -6,25 +6,35 @@ using UnityEngine;
 
 public class Exercise5 : MonoBehaviour
 {
-   //the number to multiply
+   //number to multiply
     public int number;
-   
-    private int y = 1;
+
+    private int z = 1;
+
+
+    private void Start()
+    {
+        Calculator(number, z);
+    }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
-            Calculator(number, y);
-            y++;
+            Calculator(number, z);
+            z++;
         }
-        
-    }    
-
-    private void Calculator(int number, int y)
-    {
-        Debug.Log($"{number}x{y}={number * y}");
     }
+    private void Calculator(int x, int y)
+    {
+        Debug.Log($"{x}x{y}={x * y}");
+    }
+
+
+
+
+
+
 
 
 }
